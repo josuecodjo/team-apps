@@ -1,0 +1,12 @@
+apiVersion: kro.run/v1alpha1
+kind: WebApp
+metadata:
+  name: webapp2
+  annotations:
+    argocd.argoproj.io/tracking-id: webapp-app2
+spec:
+  image: nginx
+  replicas: 2
+  ingress:
+    enabled: true
+  namespace: web
