@@ -3,10 +3,10 @@ kind: WebApp
 metadata:
   name: webapp
   annotations:
-    argocd.argoproj.io/tracking-id: webapp-app
+    argocd.argoproj.io/tracking-id: webapp-app2
 spec:
   image: nginx
   replicas: 2
   ingress:
     enabled: true
-  # namespace: web
+  namespace: web

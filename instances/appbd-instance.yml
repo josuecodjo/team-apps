@@ -1,0 +1,16 @@
+apiVersion: kro.run/v1alpha1
+kind: AppBD
+metadata:
+  name: appbd
+  annotations:
+    argocd.argoproj.io/tracking-id: appbd-app
+spec:
+  image: "nginx"
+  replicas: 1
+
+  ingress:
+    enabled: true
+
+  database:
+    enabled: true
+    dbName: "charter"
