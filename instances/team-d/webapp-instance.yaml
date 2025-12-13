@@ -3,7 +3,7 @@ kind: WebApp
 metadata:
   name: webapp
   annotations:
-    argocd.argoproj.io/tracking-id: webapp-app2
+    argocd.argoproj.io/tracking-id: webapp-app
 spec:
   image: nginx
   replicas: 2
